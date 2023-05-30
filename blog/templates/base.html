@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            {% block title %}{% endblock title %}
+        </title>
+    </head>
+    <body>
+        <header>
+            <a href="{% url 'home' %}">All blogs</a>
+        </header>
+        {% if user.is_authenticated %}
+        <p>Hi {{user.username}}</p>
+        <p><a href="{% url 'logout' %}">Log out</a></p>
+        {% else %}
+        <p>You are not logged in..Please<a href="{% url 'login' %}">Log in</a></p>
+        {% endif %}
+        {% block content %}
+        
+        {% endblock content %}
+    </body>
+</html>
