@@ -2,3 +2,9 @@ blog_project/__init__.py
 blog/__pycache__
 blog/__init__.py
 blog_project/__pycache__
+accounts/__pycache__
+accounts/__init__.py
+accounts/migrations/__pycache__
+accounts/migrations/__init__.py
+blog/migrations/__pycache__
+blog/migrations/__init__.py
